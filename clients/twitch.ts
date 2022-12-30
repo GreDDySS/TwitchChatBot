@@ -41,7 +41,7 @@ client.initialize = async () => {
 
 client.on("ready", async () => {
     TBot.Logger.info(`${pc.green("[CONNECTED]")} || Connected to Twitch 🟢`)
-    await client.say("greddyss", "TypeScript ON! 🟢")
+    await client.say("ilotterytea", "BrorStirrer")
 })
 
 client.on("error", (error) => {
@@ -58,4 +58,4 @@ client.on("error", (error) => {
     
 })
 
-export { client, config, TwitchClient}
+export { client, config, TwitchClient }
