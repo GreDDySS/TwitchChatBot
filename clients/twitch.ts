@@ -35,13 +35,14 @@ client.use(new AlternateMessageModifier(client))
 client.use(new SlowModeRateLimiter(client, 10))
 
 client.initialize = async () => {
-    await client.joinAll(["greddyss"])
+    await client.joinAll(["greddyss", "ilotterytea"])
     client.connect()
 }
 
 client.on("ready", async () => {
     TBot.Logger.info(`${pc.green("[CONNECTED]")} || Connected to Twitch 🟢`)
-    await client.say("greddyss", "TS!")
+    await client.say("greddyss", "GreDDBot")
+    await client.say("ilotterytea", "BrorStirrer")
 })
 
 client.on("error", (error) => {
