@@ -41,7 +41,7 @@ client.initialize = async () => {
 
 client.on("ready", async () => {
     TBot.Logger.info(`${pc.green("[CONNECTED]")} || Connected to Twitch 🟢`)
-    await client.say("ilotterytea", "BrorStirrer")
+    await client.say("greddyss", "TS!")
 })
 
 client.on("error", (error) => {
